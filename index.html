@@ -15,13 +15,133 @@
   <header>
     <h1 class="title">TechStore</h1>
     <nav>
-      <a href="#">Início</a>
+      <a href="#inicio">Início</a>
       <a href="#produtos">Produtos</a>
       <a href="#servicos">Serviços</a>
       <a href="#contato">Contato</a>
     </nav>
   </header>
   <div class="container">
+    <main>
+      <section class="flex-column flex-center" id="inicio">
+        <div class="content flex-column">
+          <p>Tecnologia para o seu dia a dia</p>
+          <h1 class="titulo-inicio">Equipamentos e acessórios de informática</h1>
+          <p>Notebooks, periféricos e componentes com qualidade e bons preços.</p>
+          <a href="#produtos" id="button-produtos">Ver produtos</a>
+        </div>
+      </section>
+      <section id="produtos">
+          <h1>Produtos em destaque</h1>
+          <br>
+          <div class="cards grid-column-3">
+            <ul class="card">
+              <li>
+                <img src="./images/notebook.jpg"  class="imagem-card" alt="Notebook">
+              </li>
+              <div class="content-card flex-column">
+                <li class="titulo-card">
+                  <h2>Notebook Pro 15</h2>
+                </li>
+                <li class="descricao-card">
+                  <p>Intel Core i5, 16 GB RAM e SSD de 512 GB.</p>
+                </li>
+                <li class="preco-card">
+                  <h2>R$ 3.499,00</h2>
+                </li>
+                <li class="button-card-item">
+                  <button class="button-card">Comprar</button>
+                </li>
+              </div>
+            </ul>
+            <ul class="card">
+              <li>
+                <img src="./images/mouse.png"  class="imagem-card" alt="Mouse">
+              </li>
+              <div class="content-card flex-column">
+                <li class="titulo-card">
+                  <h2>Mouse Gamer</h2>
+                </li>
+                <li class="descricao-card">
+                  <p>Sensor preciso, iluminação RGB e design ergonômico.</p>
+                </li>
+                <li class="preco-card">
+                  <h2>R$ 149,90</h2>
+                </li>
+                <li class="button-card-item">
+                  <button class="button-card">Comprar</button>
+                </li>
+              </div>
+            </ul>
+            <ul class="card">
+              <li>
+                <img src="./images/teclado.avif"  class="imagem-card" alt="Teclado">
+              </li>
+              <div class="content-card flex-column">
+                <li class="titulo-card">
+                  <h2>Teclado Mecânico</h2>
+                </li>
+                <li class="descricao-card">
+                  <p>Teclas mecânicas, iluminação LED e conexão USB.</p>
+                </li>
+                <li class="preco-card">
+                  <h2>R$ 279,90</h2>
+                </li>
+                <li class="button-card-item">
+                  <button class="button-card">Comprar</button>
+                </li>
+              </div>
+            </ul>
+          </div>
+      </section>
+      <section id="servicos">
+        <h1>Serviços</h1>
+        <table>
+          <thead>
+            <tr>
+              <th>Serviço</th>
+              <th>Descrição</th>
+              <th>Valor</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr>
+              <td>Formatação</td>
+              <td>Instalação e configuração do sistema.</td>
+              <td>R$120,00</td>
+            </tr>
+            <tr>
+              <td>Limpeza</td>
+              <td>Manutenção preventiva.</td>
+              <td>R$80,00</td>
+            </tr>
+            <tr>
+              <td>Upgrade</td>
+              <td>Instalação de memória SSD.</td>
+              <td>A partir de R$60,00</td>
+            </tr>
+          </tbody>
+        </table>
+      </section>
+    </main>
+    <aside class="grid-column-2" id="contato">
+      <div class="text-contato">
+        <h2>Entre em contato</h2>
+        <p>Envie uma mensagem para nossa equipe.</p>
+      </div>
+      <form class="flex-column">
+          <label for="nome">Nome</label>
+          <input type="text" name="nome" id="nome" class="input-form" placeholder="Digite seu nome">
+          <label for="email">E-mail</label>
+          <input type="email" name="email" id="email" class="input-form" placeholder="Digite seu e-mail">
+          <label for="mensagem">Mensagem</label>
+          <textarea class="input-form" name="mensagem" id="mensagem" placeholder="Digite sua mensagem"></textarea>
+          <input type="submit" value="Enviar" class="button-form">
+      </form>
+    </aside>
+    <footer>
+      <p>&copy; 2026 TechStore - Loja Virtual de Informática</p>
+    </footer>
   </div>
 </body>
 
